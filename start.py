@@ -124,7 +124,6 @@ class GrowtopiaRequestHandler(BaseRequestHandler):
                 f"New malicious requests captured, automatically blocked => {self.client_address[0]}",
             )
             blockedAddress.append(self.client_address[0])
-            print(",".join(blockedAddress))
 
             exitCode: int = RunCommand(
                 f'netsh advfirewall firewall set rule name="blockedAddress" dir=in new remoteip={",".join(blockedAddress)} > nul'
