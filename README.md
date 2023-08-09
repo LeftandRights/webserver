@@ -15,7 +15,7 @@ The script can be customized using command-line arguments to specify the server'
 To run the script, use the following command in your terminal:
 
 ```bash
-python script.py -h <host_address> -p <port_number>
+python start.py -h <host_address> -p <port_number>
 ```
 
 Note: administrator privileges are required to modify firewall settings.
